@@ -1,0 +1,236 @@
+Section A
+
+1	Using Classicmodels schema, Write a Query to find the list of customers residing in the same city.
+
+2	A Business consultant wants to draw out organisation structure for a company. He needs details about the names of the employees and the names of the persons who manage them. If the person is at the highest position then he will not have a manager , in such cases the code "Top Management Employee" must be displayed in the result set. Write a Query for the same.
+
+
+3	The movies database has a table called Movies. I would like to identify the movies of the same length for my project analysis. Help me identify such movies along with the length of the  movie.
+
+4	A Family is planning to play secret santa game for christmas. Create a list who should gift to whom. The list should read as below:
+Givername is buying a Gift for Receivername.
+
+The data is present in the table below:
+GiftTable(id, name, assignment)"
+
+5	A company is conducting survey and needs data of employees with same last name to be grouped together. Get a list of such employees.
+
+6	Let us consider the below tables.
+
+Products (Product_id, Product_name,Price)
+Promotions (Promotion id, Promo_name, Promo_desc)
+
+Identify the promotions that can be applied to each product."
+
+	 
+7	Let us consider the below tables.
+
+Students(Student_id,Student_name)
+Courses(Course_id,Course_name, Course_Desc)
+Find the combinations of enrollment of students into the courses"
+
+
+8	During the World Cup tournament, the Program director of ICC has to create a schedule for league matches. There are 2 pools A and B. And the match schedule should be formed so as every team in the same pool has to play 1 match with every other team in the same pool and based on the points ranking will be assigned. Top rankers will be selected for Quarter Final matches. Help the Program Director by creating a template for Pool A and Pool B separately. Order the results in the ascending order of team ids.
+
+The data is present in the table :
+Teams (Team_id, Team_name, Pool)"
+
+
+
+9	A Game Developer is working on a cards game. He needs to create a list of cards in a Deck. If the Suits and Ranks are stored in 2 tables with respective names. Help him find the list of cards in a complete Deck. Order the result by suits and ranks.
+
+Ranks(rank varchar(5)
+Suits(suit varchar(20))"
+use bootcamp;
+
+
+10 A famous brand ABC has  10 outlets in Bangalore. The brand sells only its signature products in the stores. There are 25 signature products in the brand. The data is stored in the tables given below. Find the Store wise sales of every product.
+
+Store(store_id, store_name,address)
+Products(product_id,product_name, desc)
+Purchases(store_id,product_id,purchase_id, purchase_amt)"
+use bootcamp;	
+Select store_name,product_name, sum(purchase_amt) as sales_amt
+From Store Cross Join Products Cross Join Purchases;
+
+11	Using Classicmodels schema, Write a Query to find the list of all the products with the details of code,name,productLine and text description.
+
+12	Using Classicmodels schema, Generate a report with all the order_number, status and the total sales.
+
+
+13	The below data sample has details about Pizza Companies and their food distribution.
+
+PizzaCompany(CompanyId,CompanyName,CompanyCity)
+Foods(ItemId,ItemName,UnitsSold,CompanyID)
+
+Generate a report to see city wise food distribution from all the outlets."
+
+14	 The below data sample has details about Pizza Companies and their food distribution.
+
+PizzaCompany(CompanyId,CompanyName,CompanyCity)
+Foods(ItemId,ItemName,UnitsSold,CompanyID)
+
+Suppose three waterparks (looks like summer) get opened in the state and these waterparks outsource food from the pizza outlets.
+
+Generate a Report to see all the food distribution across the waterparks by the Pizza outlets."
+
+
+15	Using Classicmodels schema, Generate a report with all the customers and their order details and products ordered.
+
+16	Consider the data about projects and members stored in tables below.
+
+Projects(id,title)
+Members(id,name,project_id)
+
+Generate a report to list all the projects, members working on them. Also list the projects that do not have any employees assigned yet and also the employees who are available as free resources."
+
+
+17	A Retail Store XYZ recently started up in the locality. After 3 months of running the store successfully, during analysis the store manager has observed that some products were unsold. The product was not sold even once to any customer. Retail store wants to release some offers on such products. Make a list of such products for the manager.
+Use the tables from Classicmodels schema."
+
+
+18	A Shopping ecommerce site recently performed a detailed analysis of the data. It needs a report on the list of inactive customers. The company is planning on releasing offers to convert the inactive customers into active.Make a list of such names.
+Use the tables from Classicmodels schema."
+
+
+19	A Retail Store XYZ recently started up in the locality. After 3 months of running the store successfully, during analysis the store manager has observed that some products were unsold. The product was not sold even once to any customer. Retail store wants to release some offers on such products. Make a list of such products for the manager.
+Use the tables from Classicmodels schema and achieve the results using a Right Join."
+
+
+20	A Shopping ecommerce site recently performed a detailed analysis of the data. It needs a report on the list of inactive customers. The company is planning on releasing offers to convert the inactive customers into active.Make a list of such names.
+Use the tables from Classicmodels schema and achieve the results using a Right Join."
+
+
+21	Using Classicmodels schema, Generate a report with all the customers their ids, names and lifetime sales from the customer.
+
+
+
+Section B
+		
+1	Using HR Schema, Write a Query to find the first day of first job of every employee.
+
+
+2	Using HR Schema, Write a Query to find the starting minimum salary of the first job that every employee held.
+
+
+3	Using HR Schema, Write a Query to find the first day of the most recent job of every employee.
+
+
+4	Using HR Schema, Write a Query to find the minimum salary of the most recent job that every employee holds.
+
+
+5	Using HR Schema, Write a Query to find the last day of first job of every employee.
+
+
+6	Using HR Schema, Write a Query to find the starting maximum salary of the first job that every employee held.
+
+
+7	Using HR Schema, Write a Query to find the last day of the most recent job of every employee.
+
+
+8	Using HR Schema, Write a Query to find the maximum salary of the most recent job that every employee holds.
+
+
+9	Using HR Schema, Write a Query to List the current designation and previous designation of all the employees in the company.
+
+
+10	Using classicmodels Schema, Write a Query to  fetch the name of the customer along with the current and previous order date.
+
+
+11	Using classicmodels Schema, Write a Query to  fetch the name of the product line with sales for every Year  along with sales from the Previous year.
+
+
+12	Using HR Schema, Write a Query to List the first designation and next promoted designation of all the employees in the company.
+
+13	Using classicmodels Schema, Write a Query to  fetch the name of the customer along with the current and next order date.
+
+14	Using classicmodels Schema, Write a Query to  fetch the name of the product line with sales for every Year  along with sales from the Next year.
+
+15	Using HR Schema, Write a Query to calculate the cumulative distribution of Salary in the employees table.	
+
+
+Section C	
+
+Solve using Schema - Employee_details table
+
+1	Write a query to find out the total amount of salary withdrawn by the Employees in a month
+Use bootcamp;
+select sum(Salary) from employee_details;
+
+2	Write a query to find out the average rating of the Sales Team
+
+3	Write a query to find out the number of Sr. Lead with Less than 4 Years experience
+
+4	Write a query to find out the average salary of Admin Managers
+
+5	Write a query to find out the number of employees from Europe & Italy
+ select count(Employee_ID) from employee_details where Country = 'Europe' or Country = 'Italy';
+
+6	Write a query to find out the number of Freshers Joined in 2018
+ 
+7	Write a query to find out the number of Marketing Managers with experience less than 3.7
+ 
+8	Write a query to find out the 5 Best performing employee and their detail
+ 
+9	Write a query to find out the average rating of the employee from Australia
+ 
+10	Write a query to find out minimum Salary Received by the Admin Asst. Managers
+ 
+11	Write a query to find out the average rating of the Freshers
+ 
+12	Write a query to find out Minimum experience by a HR Sr. Lead.
+
+13	Write a query to find out the number of employees with experience 3 to 5 years
+ 
+14	Write a query to find out the employees of which Department (as a whole) withdraws the maximum Salary mention the withdrawn salary as well
+
+15	Write a query to find out the employees of which Department(individually) withdraws the maximum Salary
+
+16	Write a query to find out the employees of which Department (on an average) has got the lowest rating mention the withdrawn rating as well
+
+17	Write a query to find out the employees of which Department(individually) has got the best rating
+
+18	Write a query to find out the which Department had maximum number of employees
+
+19	Write a query to find out the employees of which Department (on an average) has got the best rating
+ 
+20	Write a query to find out the employees of which Department (on an average) withdraws the maximum Salary
+ 
+
+
+Section D		
+
+use bootcamp;
+
+1	Write a query to find out one Excellent employee, one moderate performing employee, one average performing employee and one poor performing employee from the entire office.By Excellent performance we mean the rating should be in the 4th quartile,by Moderate performance we mean the rating should be in the 3rd quartile, by Average performance we mean the rating should be in the 2nd quartile and by Poor performance we mean the rating should be in the 1st quartile
+	
+2	Write a query to find out one 1st Tire paid employee, one 2nd Tire paid employee, one 3rd Tire paid employee and one 4th Tire paid employee from the entire office.By 1st Tire we mean the Salary should be in the 4th quartile,by 2nd Tire paid we mean the Salary should be in the 3rd quartile, by 3rd Tire paid we mean the Salary should be in the 2nd quartile and by 4th Tire paid we mean the rating should be in the 1st quartile
+	
+3	Write a query to find out the name of employees whose performance rating is very poor.By poor performance we mean the first quartile among the entire rating.
+	
+4	Write a query to find out the top 3 highest performance employee's name in Admin Department
+
+
+5	Write a query to find out how many Sr. Leads are moderately paid in the office.By moderate,it means the employee in the 3nd quartile of the overall Salary
+	
+6	Write a query to find out the name of the highest paid Managers from all the department in office also mention the Department alongside
+	
+7	Write a query to find out the name of the second best performing employee from each Department in the office also mention the Department alongside
+	
+8	Write a query to find out how many moderate performing HRs are there in the office.By moderate,it's meant the employee in the 3nd quartile of the overall rating
+	
+9	Write a query to find out the name of the top 3 highest paid employee in the office also mention the corresponding departments
+	
+10	Write a query to find out the name of the top 3 highest performing employee in the office also mention the corresponding departments
+	
+11	Write a query to find out the name of the worst performing employee from all the department in office also mention the Department alongside
+	with A8 as (select Employee_name,Department,Employee_Rating, rank() over( order by Employee_Rating ) as a8 from employee_details)
+ select Employee_name,Department from A8 where a8 = 1;
+
+12	Write a query to find out the name of the highest paid employee from all the department in office also mention the Department alongside
+	
+13	Write a query to find out the 3 employee with worst performance from the entire office also mention the Department alongside
+	
+14	Write a query to find out the name of the average performing employees in the office.By average,it's meant the employee in the 2nd quartile of the overall rating distribution.
+	
+15	Write a query to find out the employee name who belongs to the Excellent performing group & also in the Tier 1 salary received group In the entire office. By Excellent Performance we mean the employee's rating belongs to the top 25% rating among the entire office and by Tier 1 Salary we mean the employee's salary belongs to the top 25% salary among the entire office

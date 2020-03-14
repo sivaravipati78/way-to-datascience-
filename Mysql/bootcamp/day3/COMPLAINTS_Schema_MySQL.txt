@@ -1,0 +1,302 @@
+create table Customers_Info 
+(Cust_Id varchar(30),
+Cust_Name varchar(50),
+DOB date,
+Address_Id int,
+Address text,
+Meter_Type varchar(10),
+Online_Active int(2));
+
+Insert into Customers_info values
+('30000001','Adam','1998-10-01',101,'Hno 12 ,Lane 3','Dumb',1);
+Insert into Customers_info values
+('30000002','Sam','1999-11-11',102,'FlatNo 15 ,Lane 7','Smart',1);
+Insert into Customers_info values
+('30000003','Kira','1978-10-01',103,'Hno 12 ,Lane 102','Dumb',0);
+Insert into Customers_info values
+('30000004','Newton','1980-01-12',104,'FlatNo 25 ,Road No 102',NULL,1);
+Insert into Customers_info values
+('30000005','James','1955-05-06',105,'Road No 44,Bunglow Snew','Smart',0);
+Insert into Customers_info values
+('30000006','Jason','1960-03-03',106,'Road No 98,Area Part','Dumb',1);
+Insert into Customers_info values
+('30000007','Paul','1996-07-13',107,'Road No 101','Smart',1);
+Insert into Customers_info values
+('30000008','Kira','1988-09-11',108,'Flat No 90',NULL,0);
+Insert into Customers_info values
+('30000009','Nikhi','1992-09-30',109,'Flat No 88','Smart',1);
+Insert into Customers_info values
+('30000010','Andy','1993-04-11',109,'Flat 12,Road no 78','Dumb',0);
+Insert into Customers_info values
+('30000011','Andrew','1969-03-11',110,'Flat 13,Road no 78','Smart',0);
+Insert into Customers_info values
+('30000012','John','1959-02-02',111,'Road no 78',NULL,1);
+Insert into Customers_info values
+('30000013','John','1959-02-02',111,'Road no 90','Smart',0);
+Insert into Customers_info values
+('30000014','Johnny','1990-04-12',112,'Flat 202,Lane 5','Smart',1);
+Insert into Customers_info values
+('30000015','Mark','1969-06-07',113,'Road no 909','Dumb',0);
+Insert into Customers_info values
+('30000016','Markel','1953-07-07',114,'Road no 911','Smart',1);
+Insert into Customers_info values
+('30000017','Gem','1951-08-17',115,'Flat 60',NULL,0);
+Insert into Customers_info values
+('30000018','Jem','1950-01-17',116,'Flat 66,Lane 99','Dumb',0);
+Insert into Customers_info values
+('30000019','Pamila','1972-05-17',117,'Flat 4,Lane 9','Dumb',1);
+Insert into Customers_info values
+('30000020','Shell','1959-01-17',118,'Flat 3,Road no 23','Smart',0);
+select * from Customers_info;
+
+create table complaints
+(Cust_id varchar(30), 
+complaint_id varchar(20),
+complaint_date date,
+complaint_status varchar(10),
+closed_date datetime,
+complaint_reason1 varchar(50),
+complaint_reason2 varchar(50),
+complaint_reason3 varchar(50),
+complaint_channel varchar(10));
+
+
+insert into complaints values
+('30000001',	'8008796198',	 '2018-01-01',	'Closed',	'2018-01-15',	'Appointments'	,'Work Quality'	,'Same Problem','Call');
+insert into complaints values
+('30000002',	'8008634352',	'2018-02-01',	'Closed',	'2018-02-05',	'Policy',	'Cancellation',	'Charges','Call');
+insert into complaints values
+('30000003',	'8008613245',	'2018-03-01',	'Closed',	'2018-03-07',	'Sales',	'Discount',	'Not Applied','Webchat');
+insert into complaints values
+('30000004',	'8008613830',	'2018-04-01',	'Closed',	'2018-04-15',	'Payments',	'Incorrect', 'Amount taken','Email');	
+insert into complaints values
+('30000005',	'8008835019',	'2018-01-01',	'Closed',	'2018-01-12',	'Agent Behaviour','Not Happy','Rude','Call');
+insert into complaints values
+('30000006',	'8008142992',	'2018-11-01',	'Closed',	'2018-11-05',	'Appointments','Rescheduled',	'Not Informed','Email');
+insert into complaints values
+('30000007',	'8008246390',	'2018-07-01',	'Closed',	'2018-07-26',	'Appointments',	'Work Quality',	'Same Problem','Call');
+insert into complaints values
+('30000008',	'8008123456',	'2018-08-01',	'Closed',	'2018-08-15',	'Policy',	'Cancellation',	'Charges','Email');
+insert into complaints values
+('30000009',	'8008987653',	'2018-09-01',	'Closed',	'2018-09-09',	'Sales',	'Discount',	'Not Applied','Call');
+insert into complaints values
+('30000010',	'8008456789',	'2018-10-01',	'Closed',	'2018-10-02',	'Payments',	'Incorrect Amount taken','Incorrectly Setup','Email');
+insert into complaints values
+('30000011',	'8008091234',	'2018-11-01',	'Closed',	'2018-10-11',	'Agent Behaviour',	'Not Happy',	'Rude','Webchat');
+insert into complaints values
+('30000012',	'8008654390',	'2018-12-01',	'Closed',	'2018-12-15',	'Appointments',	'Work Quality',	'Same Problem','Call');
+insert into complaints values
+('30000013',	'8008543890',	'2018-01-11',	'Closed',	'2018-01-15',	'Appointments',	'Rescheduled',	'Not Informed','Call');
+insert into complaints values
+('30000014',	'8008665412',	'2018-02-10',	'Closed',	'2018-02-20',	'Policy',	'Cancellation',	'Charges','Webchat');
+insert into complaints values
+('30000015',	'8008102309',	'2018-03-17',	'Closed',	'2018-03-19',	'Sales',	'Discount'	,'Not Applied','Webchat');
+insert into complaints values
+('30000016',	'8008128096',	'2018-04-21',	'Closed',	'2018-04-21',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Email');
+insert into complaints values
+('30000017',	'8008890632',	'2018-01-26',	'Closed',	'2018-01-30',	'Agent Behaviour',	'Not Happy',	'Rude','Email');
+insert into complaints values
+('30000018',	'8008321890',	'2018-06-17',	'Closed',	'2018-06-17',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Email');
+insert into complaints values
+('30000019',	'8008543890',	'2018-12-14',	'Closed',	'2018-12-12',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Webchat');
+insert into complaints values
+('30000020',	'8008456892',	'2018-08-10',	'Closed',	'2018-08-15',	'Appointments',	'Rescheduled',	'Not Informed','Call');
+insert into complaints values
+('30000001',	'8008152638',	'2019-01-10',	'Closed',	'2019-02-02',	'Appointments',	'Work Quality',	'Same Problem','Call');
+insert into complaints values
+('30000002',	'8008378490',	'2019-02-01',	'Closed',	'2019-02-05',	'Policy',	'Cancellation','charges','Email');
+insert into complaints values
+('30000003',	'8008492098',	'2019-03-01',	'Closed',	'2019-03-07',	'Sales',	'Discount',	'Not Applied','Call');
+insert into complaints values
+('30000004',	'8008639028',	'2019-05-12',	'Closed',	'2019-05-15',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Webchat');
+insert into complaints values
+('30000005',	'8008728102',	'2019-05-01',	'Closed',	'2019-05-12',	'Agent Behaviour',	'Not Happy',	'Rude','Call');
+insert into complaints values
+('30000006',	'8008920389',	'2019-06-01',	'Closed',	'2019-06-05',	'Appointments',	'Rescheduled',	'Not Informed','Call');
+insert into complaints values
+('30000007',	'8008638394',	'2019-07-01',	'Closed',	'2019-07-26',	'Appointments',	'Work Quality',	'Same Problem','Call');
+insert into complaints values
+('30000008',	'8008730293',	'2019-08-01',	'Closed',	'2019-08-15',	'Policy',	'Cancellation',	'Charges','Call');
+insert into complaints values
+('30000009',	'8008182930',	'2019-09-01',	'Closed',	'2019-09-09',	'Sales',	'Discount',	'Not Applied','Email');
+insert into complaints values
+('30000010',	'8008888290',	'2019-10-01',	'Closed',	'2019-10-02',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Webchat');
+insert into complaints values
+('30000011',	'8008283948',	'2019-10-01',	'Open',		Null,		'Agent Behaviour',	'Not Happy',	'Rude','Call');
+insert into complaints values
+('30000012',	'8008903747',	'2019-09-09',	'Closed',	'2019-09-15',	'Appointments',	'Work Quality',	'Same Problem','Email');
+insert into complaints values
+('30000013',	'8008432783',	'2018-01-13',	'Closed',	'2019-01-15',	'Appointments',	'Rescheduled',	'Not Informed','Email');
+insert into complaints values
+('30000014',	'8008278394',	'2018-02-20',	'Closed',	'2018-02-20',	'Policy',	'Cancellation',	'Charges','Call');
+insert into complaints values
+('30000015',	'8008903747',	'2019-03-17',	'Closed',	'2019-03-19',	'Sales',	'Discount',	'Not Applied','Call');
+insert into complaints values
+('30000016',	'8008093748',	'2019-04-21',	'Closed',	'2019-04-29',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Call');
+insert into complaints values
+('30000017',	'8008537490',	'2019-05-26',	'Closed',	'2019-05-30',	'Agent Behaviour',	'Not Happy',	'Rude','Webchat');
+insert into complaints values
+('30000018',	'8008937733',	'2019-06-17',	'Closed',	'2019-06-17',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Webchat');
+insert into complaints values
+('30000019',	'8008772888',	'2019-07-14',	'Closed',	'2019-07-15',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Email');
+insert into complaints values
+('30000020',	'8008111223',	'2019-08-10',	'Closed',	'2019-08-15',	'Appointments',	'Rescheduled',	'Not Informed','Email');
+insert into complaints values
+('30000001',	'8008100008',	'2019-01-10',	'Closed',	'2019-02-02',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Call');
+insert into complaints values
+('30000001',	'8000876666',	'2018-07-07',	'Closed',	'2018-07-17',	'Appointments',	'Work Quality',	'Same Problem','Call');
+insert into complaints values
+('30000005',	'8008111000',	'2018-06-06',	'Closed',	'2018-06-16',	'Policy',	'Cancellation',	'charges','Call');
+insert into complaints values
+('30000005',	'8008183647',	'2018-11-06',	'Closed',	'2018-11-16',	'Policy',	'Cancellation',	'charges','Email');
+insert into complaints values
+('30000005',	'8008163499',	'2018-12-09',	'Closed',	'2018-12-16',	'Policy',	'Cancellation',	'charges','Webchat');
+insert into complaints values
+('30000005',	'8008738392',	'2018-12-12',	'Closed',	'2018-12-31',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup','Webchat');
+insert into complaints values
+('30000005',	'8008093877',	'2019-11-06',	'Closed',	'2019-11-16',	'Policy',	'Cancellation',	'charges','Call');
+insert into complaints values
+('30000005',	'8008729902',	'2018-12-06',	'Closed',	'2018-12-26',	'Policy',	'Cancellation',	'charges','Call');
+insert into complaints values
+('30000017',	'8008839200',	'2018-12-21',	'Closed',	'2018-12-31',	'Appointments',	'Work Quality',	'Same Problem','Call');
+
+create table contacts
+(Cust_id varchar(30),
+Contact_Date date,
+Contact_Channel varchar(10),
+Contact_reason1 varchar(30),
+Contact_reason2 varchar(30),
+Contact_reason3 varchar(30));
+select * from contacts;
+
+
+insert into contacts values
+('30000001',	'2018-12-15',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000001',	'2019-01-06',	'Call',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000001',	'2018-07-01',	'Email',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000002',	'2018-01-10',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000003',    '2018-02-25',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000003',	'2019-02-15',	'Webchat',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000004',	'2018-03-20',	'Call',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000004',	'2019-05-10',	'Email',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000006',	'2018-10-01',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000006',	'2019-06-01',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000007',	'2019-07-01',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000008',	'2018-07-12',	'Email',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000008',	'2019-07-09',	'Webchat',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000009',	'2018-09-01',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000011',	'2019-10-01',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000001',	'01-01-2018',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000002',	'2018-01-12',	'Webchat',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000003',	'2018-02-01',	'Call',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000004',	'2018-04-01',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000005',	'2018-12-30',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000006',	'2018-11-01',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000007',	'2018-06-01',	'Webchat',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000008',	'2018-07-26',	'Email',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000009',	'2018-08-29',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000010',	'2018-11-01',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000011',	'2018-11-07',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000012',	'2018-12-12',	'Webchat',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000013',	'2018-01-09',	'Call',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000014',	'2018-02-03',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000015',	'2018-03-15',	'Call',	'Agent Behaviour'	,'Not Happy',	'Rude');
+insert into contacts values
+('30000016',	'2018-04-19',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000017',	'2018-01-20',	'Email',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000018',	'2018-06-13',	'Call',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000019',	'2018-12-21',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000020',	'2018-08-21',	'Webchat',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000001',	'2019-01-3',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000002',	'2019-02-21',	'Email',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000003',	'2019-02-22',	'Email',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000004',	'2019-05-02',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000005',	'2019-05-17',	'Webchat',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000006',	'2019-06-21',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000007',	'2019-07-10',	'Call',	'Payments',	'ncorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000008',	'2019-07-11',	'Call',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000009',	'2019-09-11',	'Email',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000010',	'2019-10-11',	'Email',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000011',	'2019-10-11',	'Email',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000012',	'2019-09-03',	'Call',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000013',	'2018-01-10',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000014',	'2018-02-12',	'Call',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000015',	'2019-03-13',	'Email',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000016',	'2019-04-16',	'Email',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000017',	'2019-05-16',	'Webchat',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000018',	'2019-06-27',	'Email',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000019',	'2019-07-24',	'Webchat',	'Sales',	'Discount',	'Not Applied');
+insert into contacts values
+('30000020',	'2019-08-15',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000001',	'2019-01-19',	'Webchat',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000001',	'2018-07-10',	'Email',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000005',	'2018-06-01',	'Webchat',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000005',	'2018-11-05',	'Call',	'Sales',	'Discount','Not Applied');
+insert into contacts values
+('30000005',	'2018-12-01',	'Call',	'Agent Behaviour',	'Not Happy',	'Rude');
+insert into contacts values
+('30000005',	'04-12-2018',	'Call',	'Appointments',	'Work Quality',	'Same Problem');
+insert into contacts values
+('30000005',	'2019-11-01',	'Call',	'Payments',	'Incorrect Amount taken',	'Incorrectly Setup');
+insert into contacts values
+('30000005',	'2018-12-16',	'Email',	'Policy',	'Cancellation',	'Charges');
+insert into contacts values
+('30000017',	'2018-12-29',	'Webchat',	'Sales',	'Discount',	'Not Applied');
+
+
